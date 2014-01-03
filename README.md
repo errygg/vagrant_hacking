@@ -55,7 +55,7 @@ ONBOOT=yes
 9. Install some stuff on the VM:
 
 <pre>
-root@vagrant-centos64$ yum install gcc perl
+root@vagrant-centos64$ yum install gcc perl perl-XML-Simple perl-Crypt-SSLeay
 </pre>
 
 10. Install guest additions, easiest way is using Devices -> Install Guest Additions from VirtualBox GUI, mount, run, and reboot:
