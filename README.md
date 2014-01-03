@@ -107,13 +107,13 @@ vagrant@vagrant-centos64$ sudo yum clean all
 Shutdown the vm, then from a host shell:
 
 <pre>
-you@host$ vagrant package --output centos64-64.box --base vagrant-centos64-64
+you@host$ vagrant package --output centos64-64.box --base vagrant-centos64
 you@host$ vagrant box add centos64-64 centos64-64.box
 </pre>
 
 Be sure the machine named after `--base` is a machine listed displayed in your Virtual Box. If you are creating a new vagrant box from an existing vagrant box, the name may be something like `<dirname>_1369964062`
 
-You should now have a centos62-32 base box in your vagrant boxes:
+You should now have a centos64-64 base box in your vagrant boxes:
 
 <pre>
 you@host$ vagrant box list
@@ -123,7 +123,7 @@ centos64-64
 Now you can quickly create a Vagrant VM in any directory with:
 
 <pre>
-you@host$ /tmp/my_vm $ vagrant init centos62-32
+you@host$ /tmp/my_vm $ vagrant init centos64-64
 you@host$ /tmp/my_vm $ vagrant up
 you@host$ /tmp/my_vm $ vagrant ssh
 </pre>
